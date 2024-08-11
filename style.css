@@ -15,11 +15,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+H2{
+    text-align: center;
+    color: var(--text-light);
+    font-weight: bold;
+}
 a {
     text-decoration: none;
 }
 body{
     font-family: var(--font-family);
+    background-color: #202020;
+}
+p{
+    font-family: var(--font-family);
+    color: var(--text-light);
+}
+h1{
+    font-weight: bold;
+    position: relative;
+    font-size: 130px;
+    height: 50px;
+    color: var(--text-light);
 }
 .nav{
     width: 100%;
@@ -112,6 +129,7 @@ ul li a:hover {
     color: var(--text-light);
     font-weight: 500;
     margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
 }
 .title{
     font-weight: bold;
@@ -147,6 +165,7 @@ ul li a:hover {
     font-size: 30px;
     height: 50px;
     color: var(--primary-color-dark);
+    text-align: left;
 }
 
 .image{
@@ -181,131 +200,11 @@ ul li a:hover {
     font-size: 17px;
     color: var(--text-light);
 }
-@media (max-width: 1180px){
-    nav .checkbox {
-        display: block;
-    }
-    ul{
-        position: absolute;
-        width: 100%;
-        top: 100px;
-        height: calc(100vh - 85px);
-        left: -100%;
-        background-color: var(--accent-color);
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 3rem;
-        z-index: 99;
-    }
-    nav #check:checked ~ ul {
-        left: 0;
-    }
-
-    ul li a {
-        font-size: 1.2rem;
-        color: var(--text-light);
-    }
-
-    .Section_container{
-        padding: 7rem 1rem;
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .image{
-        grid-area: 1/1/2/2;
-    }
-    .title{
-        font-weight: bold;
-        color: var(--text-light);
-        line-height: 3rem;
-        margin-bottom: 3.5rem;
-        font-size: 80px;
-    }
-    .title span{
-        color: var(--primary-color-dark);
-    }
-}
-
-/* nav .checkbox, nav input{
-    display: none;
-} */
-
-
-/* --------------------------------------HEADER PANE-------------------------------------- */
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #202020;
-    height: 80px;
-} */
-/* header .Main-Logo {
-    height: 50px;
-    margin-left: 9%;
-    margin-top: 10px;
-} */
-
-
-/* --------------------------------------HERO SECTION-------------------------------------- */
-.Herocontainer
-{
-    height: 100vh;
-    background-color: #202020;
-    border: 3px solid #202020;
-    display: grid;
-    grid-template-columns: 9% 30% 30% 40%;
-    grid-template-rows: 5% 60% 25%;
-}
-.Herogrid-item
-{
-    justify-items: left;
-    padding: 20px;
-}
-.item-6{
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-
-
-
-body{
-    background-color: #202020;
-}
-
-h1{
-    font-weight: bold;
-    position: relative;
-    font-size: 130px;
-    height: 50px;
-    color: var(--text-light);
-}
-p{
-    color: rgb(233, 233, 233);
-    word-wrap: break-word;
-    
-}
-
-.MyPic{
-    float: right;
-    width: 480px;
-    border-radius: 50%;
-    position: absolute;
-    left: 57%;
-    top: 25%;
-    box-shadow: 0px 0px 2px 5px var(--primary-color-dark);
-}
-
 
 
 /* --------------------------------------SERVICES OFFERS-------------------------------------- */
-.ServiceOff{
-    text-align: center;
-    color: var(--text-light);
-    font-weight: bold;
-}
-.Servicesline {
+
+Hr {
     width: 81%;
     height: 5px;
     display: block;
@@ -316,16 +215,26 @@ p{
     display: flex;
     justify-content: space-evenly;   
 }
-
 .Container{
     display: flex;
     justify-content:center;
 }
-
 .ServiceLogo{
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+}
+.ContService{
+    min-height: 30px;
+    width: 340px;
+}
+.ContService2{
+    min-height: 30px;
+    width: 340px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border: 3px solid rgb(169, 233, 169); */
 }
 .Titleservice{
     color: var(--text-light);
@@ -343,17 +252,7 @@ p{
     min-height: 330px;
 }
 
-.ContService{
-    min-height: 50px;
-    width: 340px;
-}
-.ContService2{
-    min-height: 50px;
-    width: 340px;
-    margin-left: 5%;
-    margin-right: 5%;
-    /* border: 3px solid rgb(169, 233, 169); */
-}
+
 .ServiceButton{
    background-color: var(--secondary-color);
    color: var(--text-light);
@@ -372,8 +271,11 @@ p{
     background-color: var(--secondary-color);
     color: #090B0B;
 }
+.carousel-item{
+    height: auto;
+    position: relative;
+}
 
-/* --------------------------------------PROJECTS AND ACCOMPLISHMENTS-------------------------------------- */
 .ProjectAccom{
     text-align: center;
     color: var(--text-light);
@@ -421,9 +323,15 @@ p{
     grid-column-start: 3;
     border-radius: 30px;
     background-color: var(--text-light);
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    min-height: 556px;
+
 }
 .projectimg1{
     width: 100%;
+    height: auto;
     border-radius: 30px;
 }
 .ProjButton{
@@ -437,11 +345,18 @@ p{
     position: relative;
     left: 40%;
     right: 40%;
-    Top: 5%;
+    Top: 17%;
  }
  .ProjButton:hover {
      background-color: var(--primary-color-dark);
      color: #090B0B;
+ }
+ .PAitem-6{
+    margin: auto;
+    position: relative
+ }
+ .PAitem-6 p{
+    color: rgb(165, 165, 168);
  }
  .PAh3{
     top: 25%;
@@ -450,11 +365,145 @@ p{
     color: var(--text-light);
     position: relative;
  }
+
+
+/* if change of size */
+@media (max-width: 1180px){
+    nav .checkbox {
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        height: calc(100vh - 85px);
+        left: -100%;
+        background-color: var(--accent-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+        z-index: 99;
+    }
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.2rem;
+        color: var(--text-light);
+    }
+
+    .Section_container{
+        padding: 7rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+    .image{
+        grid-area: 1/1/2/2;
+    }
+    .title{
+        font-weight: bold;
+        color: var(--text-light);
+        line-height: 3rem;
+        margin-bottom: 3.5rem;
+        font-size: 80px;
+    }
+    .title span{
+        color: var(--primary-color-dark);
+    }
+    .HeroLogo{
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .description{
+        line-height: 1.5rem;
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        font-size: 21px;
+        font-weight: 300;
+        max-width: 80%;
+        min-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Speak{
+        font-weight: bold;
+        position: relative;
+        font-size: 30px;
+        height: 50px;
+        color: var(--primary-color-dark);
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        color: var(--text-light);
+        font-weight: bold;
+        font-size: 5.0vw;
+    }
+    .Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 40px;
+    }
+    .ContService{
+        min-width: 80%;
+        background-color: #252525;
+        padding-bottom: 2.5rem;
+        padding-top: 1.5rem;
+        border-radius: 30px;
+    }
+    .ContService2{
+        min-width: 80%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: #252525;
+        padding-bottom: 2.5rem;
+        padding-top: 1.5rem;
+        border-radius: 30px;
+        
+        /* border: 3px solid rgb(169, 233, 169); */
+    }
+    .Titleservice{
+        color: var(--text-light);
+        font-weight: bold;
+        text-align: center;
+        font-size: 4.5vw;
+    }
+    .ServiceLogo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 20%;
+    }
+    .ServiceDesc{
+        text-align: center;
+        font-size: 3.5vw;
+        color: rgb(165, 165, 168);
+        min-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: auto;
+    }
+    .ServiceButton{
+        font-size: 2.5vw;
+        min-height: 30%;
+     }
+}
+
+/* --------------------------------------PROJECTS AND ACCOMPLISHMENTS-------------------------------------- */
+
+
  .Btn_usedtools{
     background-color: var(--secondary-color);
     font-size: 15px;
     border-radius: 25px;
     color: var(--text-light);
     font-weight: bold;
+    padding: 5px;
  }
 
