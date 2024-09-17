@@ -197,7 +197,7 @@ ul li a:hover {
 .HeroLogo{
     display: flex;
     gap: 8rem;
-    z-index: 99;
+    z-index: 100;
 }
 .BestSkills{
     font-size: 17px;
@@ -514,3 +514,4 @@ Hr {
     font-weight: bold;
     padding: 5px;
  }
+
