@@ -124,11 +124,13 @@ ul li a:hover {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
+    
 }
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .subtitle{
     letter-spacing: 2px;
@@ -220,7 +222,8 @@ Hr {
     color: var(--text-light);
     background-color: white;
     display: flex;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;  
+     
 }
 .Container{
     display: flex;
@@ -230,6 +233,7 @@ Hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 
 }
 .ContService{
@@ -303,10 +307,10 @@ Hr {
 
 .PAContainer
 {
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: 9% 25% 57% 9%;
-    grid-template-rows: 20% 5% 35% 25% 15%;
+    grid-template-rows: 35% 10% 20%;
 }
 .PAgrid-item
 {
@@ -333,8 +337,8 @@ Hr {
     overflow-y: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    min-height: 100%;
-    max-height: 100%;
+    min-height: 31.5vw;
+    max-height: 31.5vw;
 
 }
 .projectimg1{
@@ -342,23 +346,6 @@ Hr {
     height: auto;
     border-radius: 30px;
 }
-.ProjButton{
-    background-color: var(--primary-color-dark);
-    font-size: large;
-    color: var(--text-light);
-    font-weight: bold;
-    border-radius: 30px;
-    width: 20%;
-    height: 55px;
-    position: relative;
-    left: 40%;
-    right: 40%;
-    Top: 17%;
- }
- .ProjButton:hover {
-     background-color: var(--primary-color-dark);
-     color: #090B0B;
- }
  .PAitem-6{
     margin: auto;
     position: relative
@@ -372,6 +359,15 @@ Hr {
     font-weight: bold;
     color: var(--text-light);
     position: relative;
+ }
+
+ .Btn_usedtools{
+    background-color: var(--secondary-color);
+    font-size: 15px;
+    border-radius: 25px;
+    color: var(--text-light);
+    font-weight: bold;
+    padding: 5px;
  }
 
 
@@ -501,17 +497,63 @@ Hr {
         font-size: 2.5vw;
         min-height: 30%;
      }
+    .PAContainer{
+        display: grid;
+        grid-template-columns: 10% 54% 26% 10%;
+        grid-template-rows: 20% 10% 3% 67%;
+        align-items: start;
+        vertical-align: top;
+        height: auto;
+        margin: 0;
+    }
+    .PAitem-2{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding-top: 2%;
+    }
+    .PAitem-5{
+        padding-top: 20%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .PAitem-6{
+        
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        font-size: 2.0vw;
+        padding-right: 5%;
+    }
+    .PAitem-3{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        min-height: 31vw;
+        max-height: 31vw;
+    }
+    .PAh3{
+        font-size: 3.5vw;
+        align-items: start;
+    }
+    .Btn_usedtools{
+        background-color: var(--secondary-color);
+        font-size: 1.0vw;
+        border-radius: 25px;
+        color: var(--text-light);
+        font-weight: bold;
+     }
+
+
 }
 
 /* --------------------------------------PROJECTS AND ACCOMPLISHMENTS-------------------------------------- */
 
 
- .Btn_usedtools{
-    background-color: var(--secondary-color);
-    font-size: 15px;
-    border-radius: 25px;
-    color: var(--text-light);
-    font-weight: bold;
-    padding: 5px;
- }
+ 
 
