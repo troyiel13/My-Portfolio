@@ -353,7 +353,6 @@ Hr {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    border: solid red;
  }
  .PAitem-6 p{
     color: rgb(165, 165, 168);
