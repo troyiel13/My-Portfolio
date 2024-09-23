@@ -348,7 +348,11 @@ Hr {
 }
  .PAitem-6{
     margin: auto;
-    position: relative
+    position: relative;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
  }
  .PAitem-6 p{
     color: rgb(165, 165, 168);
