@@ -359,7 +359,7 @@ Hr {
  }
  .PAh3{
     top: 25%;
-    font-size: 41px;
+    font-size: 2.0vw;
     font-weight: bold;
     color: var(--text-light);
     position: relative;
@@ -367,12 +367,18 @@ Hr {
 
  .Btn_usedtools{
     background-color: var(--secondary-color);
-    font-size: 15px;
+    font-size: .7vw;
     border-radius: 25px;
     color: var(--text-light);
     font-weight: bold;
     padding: 5px;
  }
+ .PAitem-5{
+    padding-top: 0%;
+}
+.PAitem-6{
+    padding-top: 0%;
+}
 
 
 /* if change of size */
